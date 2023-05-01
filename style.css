@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+@font-face {
+    font-family: 'InriaSerif';
+    src: url('fonts/InriaSerif.ttf');
+}
+@font-face {
+    font-family: 'Jura';
+    src: url('fonts/Jura.ttf');
+}
+p {
+    font-family: 'Jura', serif;
+    color: #ffffff;
+}
+.body-wrapper {
+    min-height: 100%;
+    background-image: linear-gradient(45deg, #163451, #1474CC);
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 400px;
+}
+.header__logo {
+    padding-top: 10%;
+    width: 200px;
+    height: 200px;
+}
+.header__title {
+    font-family: 'InriaSerif', serif;
+    font-size: 104px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+.header__text {
+    font-size: 48px;
+    width: 556px;
+    text-align: center;
+    margin-top: 15px;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 300px;
+}
+.features__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features__header__title {
+    font-family: 'Jura', serif;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.features__header__logo {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 25px;
+}
+.features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature__title {
+    font-family: 'Jura', serif;
+    font-size: 48px;
+    color: #ffffff;
+    display: inline-block;
+    padding-bottom: 25px;
+}
+.feature__description {
+    width: 400px;
+    font-size: 32px;
+    min-height: 470px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 90px;
+    position: relative;
+}
+.feature__description::before,
+.feature__description::after{
+    content: "";
+    position: absolute;
+    width: 326px;
+    height: 1px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.feature__description::after {
+    margin-top: auto;
+}
+.feature:nth-child(2) .feature__description::before,
+.feature:nth-child(2) .feature__description::after {
+    width: 396px;
+}
