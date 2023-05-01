@@ -97,7 +97,8 @@ p {
     position: relative;
 }
 .feature__description::before,
-.feature__description::after{
+.feature__description::after,
+.tariffs__title::after {
     content: "";
     position: absolute;
     width: 326px;
@@ -110,10 +111,32 @@ p {
     bottom: 0;
     left: 0;
 }
-.feature__description::after {
+.feature__description::after,
+.tariffs__title::after {
     margin-top: auto;
 }
 .feature:nth-child(2) .feature__description::before,
 .feature:nth-child(2) .feature__description::after {
     width: 396px;
+}
+.tariffs__title {
+    font-family: 'Jura', serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 32px;
+    position: relative;
+    margin-bottom: 125px;
+}
+.tariffs__title::after {
+    width: 309px;
+}
+.tariffs-list {
+    display: flex;
+    flex-direction: row;
+}
+.tariff__features__platforms img {
+    width: 40px;
+    height: 40px;
 }
