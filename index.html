@@ -46,7 +46,7 @@
         <div class="tariffs">
             <h2 class="tariffs__title">Наши тарифы</h2>
             <div class="tariffs-list">
-                <div class="tariff">
+                <div class="tariff standard">
                     <span class="tariff__title">Стандартный</span>
                     <div class="tariff__features">
                         <ul class="tariff__features__feature-list">
@@ -62,10 +62,12 @@
                         </div>
                     </div>
                     <div class="tariff__features__price"><span>499</span>р/год</div>
-                    <a href="#">Купить</a>
+                    <div class="tariff__features__buy">
+                        <a href="#">Купить</a>
+                    </div>
                 </div>
 
-                <div class="tariff">
+                <div class="tariff premium">
                     <span class="tariff__title">Премиум</span>
                     <div class="tariff__features">
                         <ul class="tariff__features__feature-list">
@@ -81,10 +83,12 @@
                         </div>
                     </div>
                     <div class="tariff__features__price"><span>649</span>р/год</div>
-                    <a href="#">Купить</a>
+                    <div class="tariff__features__buy"> 
+                        <a href="#">Купить</a>
+                    </div>
                 </div>
                 
-                <div class="tariff">
+                <div class="tariff free-trial">
                     <span class="tariff__title">Пробный</span>
                     <div class="tariff__features">
                         <ul class="tariff__features__feature-list">
@@ -98,21 +102,23 @@
                             <img src="img/ios.png">
                         </div>
                     </div>
-                    <a href="#">Подробнее</a>
+                    <div class="tariff__features__buy">
+                        <a href="#" >Подробнее</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="contacts">
-            <p>Жалобы и ваши пожелания принимаются по адресу электронной почты
-                <a src="#">protect@protect.ru</a>
-                <a src="#">+7 999 999 99 99</a>
+            <p class ="contacts__info">Жалобы и ваши пожелания принимаются по адресу электронной почты
+                <a href="#">protect@protect.ru</a><br>
+                <a href="#">+7 999 999 99 99</a>
             </p>
         </div>
 
         <div class="footer">
-            <img src="img/logo.png">
-            <p>Антивирус Protect <br> Protect Inc. <br>2023</p>
+            <img class="footer__logo" src="img/logo.png">
+            <p class="footer__info">Антивирус Protect <br> Protect Inc. <br>2023</p>
         </div>
 
     </div>
